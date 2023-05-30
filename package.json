@@ -1,0 +1,38 @@
+{
+  "name": "@deep-foundation/create-typescript-npm-package",
+  "keywords": [],
+  "version": "0.0.1",
+  "description": "Creates typescript npm package with utils that help you to build and publish your deep package",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deep-foundation/create-npm-package"
+  },
+  "scripts": {
+    "build": "fse remove dist && tsc && prepend-file --file-path='dist/cli.js' --content='#!/usr/bin/env node\n'",
+    "start": "npm run build && node dist/cli.js",
+    "npm-pull": "npm-pull",
+    "npm-release": "npm-release"
+  },
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "bin": {
+    "create-typescript-npm-package": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@atao60/fse-cli": "^0.1.7",
+    "@freephoenix888/prepend-file": "^1.0.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.2.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@simplyhexagonal/exec": "^2.0.2",
+    "commander": "^10.0.1",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.2.6"
+  }
+}
