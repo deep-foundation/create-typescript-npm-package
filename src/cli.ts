@@ -32,18 +32,20 @@ async function main() {
   program.parse(process.argv);
 
   const {
-    directoryPath = 'typescript-npm-package',
+    directoryPath,
     packageName,
     description = '',
     repositoryUrl = '',
   } = program.opts<Options>();
-  if (!packageName)
+  if (!directoryPath) {
+    throw new Error(
+      'Please provide a directory path by using --directory-path option'
+    );
+  }
+  if (!packageName) {
     throw new Error(
       'Please provide a package name by using --package-name option'
     );
-
-  if (await fsExtra.pathExists(directoryPath)) {
-    throw new Error(`The directory ${directoryPath} already exists`);
   }
 
   await install({ directoryPath });

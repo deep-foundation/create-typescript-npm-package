@@ -3,6 +3,9 @@ import path from 'path';
 import fsExtra from 'fs-extra';
 
 export async function install({ directoryPath }: InstallParam) {
+   if (await fsExtra.pathExists(directoryPath)) {
+      throw new Error(`The directory ${directoryPath} already exists`);
+    }
   const { execPromise: gitInitExecPromise } = exec(
     `git clone https://github.com/FreePhoenix888/typescript-npm-package-template.git ${directoryPath}`
   );
