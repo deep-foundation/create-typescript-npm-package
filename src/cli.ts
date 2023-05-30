@@ -19,7 +19,7 @@ async function main() {
 
   program
     .option(
-      '--directory-path <path>',
+      '--directory <path>',
       'The path of the directory where the package will be created'
     )
     .option('--package-name <name>', 'The name of the package')
@@ -32,14 +32,14 @@ async function main() {
   program.parse(process.argv);
 
   const {
-    directoryPath,
+    directory,
     packageName,
     description = '',
     repositoryUrl = '',
   } = program.opts<Options>();
-  if (!directoryPath) {
+  if (!directory) {
     throw new Error(
-      'Please provide a directory path by using --directory-path option'
+      'Please provide a directory path by using --directory option'
     );
   }
   if (!packageName) {
@@ -48,12 +48,12 @@ async function main() {
     );
   }
 
-  await install({ directoryPath });
-  await setup({ packageName, description, repositoryUrl, path: directoryPath });
+  await install({ directory });
+  await setup({ packageName, description, repositoryUrl, path: directory });
 }
 
 export interface Options {
-  directoryPath: string;
+  directory: string;
   packageName: string;
   description: string;
   repositoryUrl: string;

@@ -5,5 +5,5 @@ Creates a new npm package with typescript support. Uses [https://www.npmjs.com/p
 
 # Usage
 ```bash
-npx @deep-foundation/create-typescript-npm-package@0.0.3 --package-name '<PACKAGE_NAME>' --directory-path '<DIRECTORY_PATH>'
+npx @deep-foundation/create-typescript-npm-package@0.0.3 --package-name '<PACKAGE_NAME>' --directory '<DIRECTORY_PATH>'
 ```
