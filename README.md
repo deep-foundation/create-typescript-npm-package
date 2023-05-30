@@ -7,3 +7,4 @@ Creates a new npm package with typescript support. Uses [https://www.npmjs.com/p
 ```bash
 npx @deep-foundation/create-typescript-npm-package@latest --package-name '<PACKAGE_NAME>' --directory '<DIRECTORY_PATH>'
 ```
+Note: Change placeholders (`<>`) to your values
