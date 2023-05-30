@@ -5,6 +5,6 @@ Creates a new npm package with typescript support. Uses [@deep-foundation/typesc
 
 # Usage
 ```bash
-npx @deep-foundation/create-typescript-npm-package@latest --package-name '<PACKAGE_NAME>' --directory '<DIRECTORY_PATH>'
+npx @deep-foundation/create-typescript-npm-package@latest --package-name="<PACKAGE_NAME>" --directory="<DIRECTORY>" --description="<DESCRIPTION>" --repository-url="<REPOSITORY_URL>"
 ```
 Note: Change placeholders (`<>`) to your values
