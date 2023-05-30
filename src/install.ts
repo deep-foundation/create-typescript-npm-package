@@ -7,7 +7,7 @@ export async function install({ directoryPath }: InstallParam) {
       throw new Error(`The directory ${directoryPath} already exists`);
     }
   const { execPromise: gitInitExecPromise } = exec(
-    `git clone https://github.com/FreePhoenix888/typescript-npm-package-template.git ${directoryPath}`
+    `git clone https://github.com/deep-foundation/typescript-npm-package-template.git ${directoryPath}`
   );
   const gitInitResult = await gitInitExecPromise;
   if (gitInitResult.exitCode !== 0) {
