@@ -24,7 +24,7 @@ async function main() {
     )
     .option('--package-name <name>', 'The name of the package')
     .option(
-      '--description Creates typescript npm package',
+      '--description <description>',
       'The description of the package'
     )
     .option('--repository-url <url>', 'The url of the repository');
