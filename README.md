@@ -5,6 +5,8 @@
 Creates a new npm package with typescript support. Uses [@deep-foundation/typescript-npm-package-template](https://github.com/deep-foundation/typescript-npm-package-template) as a template.
 
 # Usage
+## Library Usage
+See [Documentation] for examples and API
 
 <!-- CLI_HELP_START -->
 ## Cli Usage
@@ -25,3 +27,6 @@ Options:
   --repository-url  The url of the repository                           [string]
 ```
 <!-- CLI_HELP_END -->
+
+[Documentation]: https://deep-foundation.github.io/create-typescript-npm-package/
+
