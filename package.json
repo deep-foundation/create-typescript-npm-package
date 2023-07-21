@@ -11,14 +11,14 @@
   "scripts": {
     "package:build": "tsc",
     "package:clean-build": "fse remove dist && npm run package:build",
-    "start": "npm run build && node dist/cli/cli.js",
+    "start": "npm run build && node dist/cli/create-typescript-npm-package.js",
     "npm-pull": "npm-pull",
     "npm-release": "npm-release"
   },
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "bin": {
-    "create-typescript-npm-package": "dist/cli/cli.js"
+    "create-typescript-npm-package": "dist/cli/create-typescript-npm-package.js"
   },
   "files": [
     "dist"
