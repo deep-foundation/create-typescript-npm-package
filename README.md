@@ -7,4 +7,21 @@ Creates a new npm package with typescript support. Uses [@deep-foundation/typesc
 # Usage
 
 <!-- CLI_HELP_START -->
+## Cli Usage
+
+### `create-typescript-npm-package`
+```
+create-typescript-npm-package [Options]
+
+Creates new typescript npm package
+
+Options:
+  --help            Show help                                          [boolean]
+  --version         Show version number                                [boolean]
+  --directory-name  The name of the directory where the package will be created
+                                                             [string] [required]
+  --package-name    The name of the package                  [string] [required]
+  --description     The description of the package                      [string]
+  --repository-url  The url of the repository                           [string]
+```
 <!-- CLI_HELP_END -->
