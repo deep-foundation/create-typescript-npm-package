@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import { setup as setup } from '../setup';
+import { setup } from '../setup.js';
 import fsExtra from 'fs-extra';
 import path from 'path';
 import { install } from '../install';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-
-export { setup as create } from '../setup';
 
 main();
 
