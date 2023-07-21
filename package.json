@@ -3,6 +3,7 @@
   "keywords": [],
   "version": "0.2.1",
   "description": "Creates typescript npm package with utils that help you to build and publish your deep package",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/deep-foundation/create-npm-package"
