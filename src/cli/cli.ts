@@ -1,10 +1,10 @@
 import { program } from 'commander';
-import { setup as setup } from './setup';
+import { setup as setup } from '../setup';
 import fsExtra from 'fs-extra';
 import path from 'path';
-import { install } from './install';
+import { install } from '../install';
 
-export { setup as create } from './setup';
+export { setup as create } from '../setup';
 
 main();
 
