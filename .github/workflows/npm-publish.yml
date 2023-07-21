@@ -11,9 +11,23 @@ on:
 
 jobs:
   main:
-    uses: deep-foundation/workflows/.github/workflows/npm-publish.yml@main
+    uses: deep-foundation/workflows/.github/workflows/npm-publish.yml@npm-publish-1.1.0
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
     with:
-      build-command: "npm run build"
-      test-command: "echo 'Tests are temporarely disabled'"
+      build-command: "npm run package:build"
+      test-command: "echo 'Tests are temporarily disabled'"
+      should-generate-documentation: true
+      generate-documentation-command: |
+        npm run generate-help-of-cli-apps-to-readme
+        git add README.md
+        if git diff --staged --quiet
+        then
+          echo "No changes to commit"
+        else
+          git config --global user.name 'FreePhoenix888'
+          git config --global user.email 'freephoenix888@gmail.com'
+          git commit -m 'docs: update README.md'
+          git push origin main
+        fi
+        ${{ vars.GENERATE_DOCUMENTATION_COMMAND }}
