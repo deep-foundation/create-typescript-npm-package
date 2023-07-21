@@ -1,3 +1,3 @@
-export { install } from "./install";
-export { setup } from "./setup";
+export { install, type InstallParam } from "./install";
+export { setup, type CreateParam } from "./setup";
 
