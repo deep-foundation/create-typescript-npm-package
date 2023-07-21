@@ -1,6 +1,5 @@
 import { program } from 'commander';
 import { setup as setup } from './setup';
-import exec from '@simplyhexagonal/exec';
 import fsExtra from 'fs-extra';
 import path from 'path';
 import { install } from './install';
