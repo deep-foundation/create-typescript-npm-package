@@ -9,8 +9,8 @@
     "url": "https://github.com/deep-foundation/create-npm-package"
   },
   "scripts": {
-    "package:build": "tsc",
-    "package:clean-build": "fse remove dist && npm run package:build",
+    "build": "tsc",
+    "clean-build": "fse remove dist && npm run build",
     "start": "npm run build && node dist/cli/create-typescript-npm-package.js",
     "npm-pull": "npm-pull",
     "npm-release": "npm-release",
