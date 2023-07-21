@@ -38,7 +38,7 @@ async function main() {
       })
       .parseSync()
 
-  await install({ directoryName: cliOptions.directoryName });
+  install({ directoryName: cliOptions.directoryName });
   await setup({
     ...cliOptions,
     directoryPath: path.resolve(cliOptions.directoryName),
