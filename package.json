@@ -8,7 +8,8 @@
     "url": "https://github.com/deep-foundation/create-npm-package"
   },
   "scripts": {
-    "build": "fse remove dist && tsc",
+    "package:build": "tsc",
+    "package:clean-build": "fse remove dist && npm run package:build",
     "start": "npm run build && node dist/cli/cli.js",
     "npm-pull": "npm-pull",
     "npm-release": "npm-release"
