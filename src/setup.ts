@@ -27,6 +27,9 @@ export async function setup({
     const promise = new Promise(async () => {
       let fileContent = await fsExtra.readFile(file, 'utf-8');
       for (const [key, value] of Object.entries(replacementDictionary)) {
+        if(!value) {
+          continue;
+        }
         fileContent = fileContent.replace(key, value);
       }
       await fsExtra.writeFile(file, fileContent);
@@ -38,7 +41,7 @@ export async function setup({
 
 export interface CreateParam {
   packageName: string;
-  description: string;
-  repositoryUrl: string;
+  description?: string;
+  repositoryUrl?: string;
   path: string;
 }
