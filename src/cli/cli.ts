@@ -4,7 +4,7 @@ import { program } from 'commander';
 import { setup } from '../setup.js';
 import fsExtra from 'fs-extra';
 import path from 'path';
-import { install } from '../install';
+import { install } from '../install.js';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
