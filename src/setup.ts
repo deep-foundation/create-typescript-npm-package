@@ -6,7 +6,7 @@ export async function setup({
   description,
   repositoryUrl,
   directoryPath,
-}: CreateParam) {
+}: SetupParam) {
   const replacementDictionary = {
     '<PACKAGE_NAME>': packageName,
     '<DESCRIPTION>': description,
@@ -37,7 +37,7 @@ export async function setup({
   await Promise.all(promises);
 }
 
-export interface CreateParam {
+export interface SetupParam {
   packageName: string;
   description?: string;
   repositoryUrl?: string;
