@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from 'commander';
 import { setup as setup } from '../setup';
 import fsExtra from 'fs-extra';
