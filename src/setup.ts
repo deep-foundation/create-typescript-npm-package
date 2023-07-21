@@ -1,5 +1,5 @@
 import fsExtra from 'fs-extra';
-import { glob } from 'glob';
+import { glob, globSync } from 'glob';
 
 export async function setup({
   packageName,
@@ -13,14 +13,12 @@ export async function setup({
     '<REPOSITORY_URL>': repositoryUrl,
   };
 
-  let files = await glob(`${directoryPath}/**/*`, {
+  let files = globSync(`${directoryPath}/**/*`, {
     ignore: ['**/node_modules/**/*'],
     absolute: true,
   });
 
-  files = await Promise.all(
-    files.filter((file) => fsExtra.lstatSync(file).isFile())
-  );
+  files = files.filter((file) => fsExtra.lstatSync(file).isFile());
 
   const promises = [];
   for (const file of files) {
