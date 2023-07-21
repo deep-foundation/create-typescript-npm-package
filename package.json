@@ -16,7 +16,7 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "bin": {
-    "create-typescript-npm-package": "dist/cli.js"
+    "create-typescript-npm-package": "dist/cli/cli.js"
   },
   "files": [
     "dist"
