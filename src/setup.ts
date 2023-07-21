@@ -5,7 +5,7 @@ export async function setup({
   packageName,
   description,
   repositoryUrl,
-  path,
+  directoryPath,
 }: CreateParam) {
   const replacementDictionary = {
     '<PACKAGE_NAME>': packageName,
@@ -13,7 +13,7 @@ export async function setup({
     '<REPOSITORY_URL>': repositoryUrl,
   };
 
-  let files = await glob(`./${path}/**/*`, {
+  let files = await glob(`${directoryPath}/**/*`, {
     ignore: ['**/node_modules/**/*'],
     absolute: true,
   });
@@ -43,5 +43,5 @@ export interface CreateParam {
   packageName: string;
   description?: string;
   repositoryUrl?: string;
-  path: string;
+  directoryPath: string;
 }
