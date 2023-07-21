@@ -13,7 +13,8 @@
     "package:clean-build": "fse remove dist && npm run package:build",
     "start": "npm run build && node dist/cli/create-typescript-npm-package.js",
     "npm-pull": "npm-pull",
-    "npm-release": "npm-release"
+    "npm-release": "npm-release",
+    "generate-help-of-cli-apps-to-readme": "generate-help-of-cli-apps-to-readme"
   },
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
