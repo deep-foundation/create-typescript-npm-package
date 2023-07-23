@@ -12,7 +12,7 @@ main();
 
 async function main() {
   const cliOptions = yargs(hideBin(process.argv))
-    .usage(`$0 [Options]`, `Creates a new npm package with typescript support that will help you to manage your deep package. Uses [@deep-foundation/typescript-npm-package-template](https://github.com/deep-foundation/typescript-npm-package-template) as a template `)
+    .usage(`$0 [Options]`, `Creates a new npm package with typescript support that will help you to manage your deep package. Uses [`@deep-foundation/typescript-npm-package-template`](https://github.com/deep-foundation/typescript-npm-package-template) as a template`)
     .option('directory-name', {
       type: 'string',
       description:

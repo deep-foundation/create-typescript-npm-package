@@ -2,7 +2,7 @@
 [![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/deep-foundation/create-typescript-npm-package) 
 [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label&color=purple)](https://discord.gg/deep-foundation)
 
-Creates a new npm package with typescript support that will help you to manage your deep package. Uses [@deep-foundation/typescript-npm-package-template](https://github.com/deep-foundation/typescript-npm-package-template) as a template 
+Creates a new npm package with typescript support that will help you to manage your deep package. Uses [`@deep-foundation/typescript-npm-package-template`](https://github.com/deep-foundation/typescript-npm-package-template) as a template
 
 # Table Of Contents
 <!-- TABLE_OF_CONTENTS_START -->
