@@ -33,8 +33,8 @@ See [Documentation] for examples and API
 create-typescript-npm-package [Options]
 
 Creates a new npm package with typescript support that will help you to manage y
-our deep package. Uses [@deep-foundation/typescript-npm-package-template](https:
-//github.com/deep-foundation/typescript-npm-package-template) as a template
+our deep package. Uses [`@deep-foundation/typescript-npm-package-template`](http
+s://github.com/deep-foundation/typescript-npm-package-template) as a template
 
 Options:
   --help            Show help                                          [boolean]
