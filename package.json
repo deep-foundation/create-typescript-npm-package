@@ -6,7 +6,7 @@
     "typescript",
     "npm"
   ],
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Creates a new npm package with typescript support that will help you to manage your deep package. Uses [`@deep-foundation/typescript-npm-package-template`](https://github.com/deep-foundation/typescript-npm-package-template) as a template",
   "type": "module",
   "repository": {
