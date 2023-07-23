@@ -2,7 +2,7 @@
   "name": "@deep-foundation/create-typescript-npm-package",
   "keywords": [],
   "version": "2.0.1",
-  "description": "Creates typescript npm package with utils that help you to build and publish your deep package",
+  "description": "Creates a new npm package with typescript support that will help you to manage your deep package. Uses [@deep-foundation/typescript-npm-package-template](https://github.com/deep-foundation/typescript-npm-package-template) as a template ",
   "type": "module",
   "repository": {
     "type": "git",
