@@ -13,8 +13,7 @@
     "clean-build": "fse remove dist && npm run build",
     "start": "npm run build && node dist/cli/create-typescript-npm-package.js",
     "npm-pull": "npm-pull",
-    "npm-release": "npm-release",
-    "generate-help-of-cli-apps-to-readme": "generate-help-of-cli-apps-to-readme"
+    "npm-release": "npm-release"
   },
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -27,7 +26,6 @@
   "devDependencies": {
     "@atao60/fse-cli": "^0.1.7",
     "@deep-foundation/npm-automation": "~10.0.17",
-    "@freephoenix888/generate-help-of-cli-apps-to-readme": "^0.0.1-dev.8",
     "@freephoenix888/prepend-file": "^1.0.0",
     "@types/execa": "^2.0.0",
     "@types/fs-extra": "^11.0.1",
