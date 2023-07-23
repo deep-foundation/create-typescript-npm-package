@@ -1,7 +1,8 @@
 {
   "name": "@deep-foundation/create-typescript-npm-package",
   "keywords": [
-    "deep-package",
+    "deep",
+    "package",
     "typescript",
     "npm"
   ],
