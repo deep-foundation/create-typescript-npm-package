@@ -1,5 +1,5 @@
 import { glob } from 'glob';
-import {generateDocumentation} from '@deep-foundation/npm-automation'
+import {generateDocumentation} from '@deep-foundation/npm-automation/dist/main.js'
 import path from 'path';
 import fsExtra from 'fs-extra';
 import { execa } from 'execa';
