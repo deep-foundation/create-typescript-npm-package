@@ -30,7 +30,7 @@
   ],
   "devDependencies": {
     "@atao60/fse-cli": "^0.1.7",
-    "@deep-foundation/npm-automation": "~10.0.17",
+    "@deep-foundation/npm-automation": "~13.0.0",
     "@freephoenix888/prepend-file": "^1.0.0",
     "@types/execa": "^2.0.0",
     "@types/fs-extra": "^11.0.1",
