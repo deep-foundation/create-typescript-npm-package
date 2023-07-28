@@ -14,11 +14,11 @@
     "url": "https://github.com/deep-foundation/create-npm-package"
   },
   "scripts": {
-    "build": "tsc",
-    "clean-build": "fse remove dist && npm run build",
-    "start": "npm run build && node dist/cli/create-typescript-npm-package.js",
-    "npm-pull": "npm-pull",
-    "npm-release": "npm-release"
+    "library:build:clean": "fse remove dist && npm run library:build:dirty",
+    "library:build:dirty": "ts-node --esm ./automation/library/build.ts",
+    "library:build:generate-package-class": "generate-package-class",
+    "documentation:generate": "ts-node --esm ./automation/documentation/generate.ts",
+    "library:documentation:generate": "typedoc ./src/main.ts"
   },
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
