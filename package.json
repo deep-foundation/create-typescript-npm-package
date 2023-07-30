@@ -17,7 +17,7 @@
     "library:build:clean": "fse remove dist && npm run library:build:dirty",
     "library:build:dirty": "ts-node --esm ./automation/library/build.ts",
     "library:build:generate-package-class": "generate-package-class",
-    "documentation:generate": "ts-node --esm ./automation/documentation/generate.ts",
+    "documentation:generate": "cross-env DEBUG=* ts-node --esm ./automation/documentation/generate.ts",
     "library:documentation:generate": "typedoc ./src/main.ts"
   },
   "main": "dist/main.js",
@@ -36,6 +36,7 @@
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.2.4",
     "@types/yargs": "^17.0.24",
+    "cross-env": "^7.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
