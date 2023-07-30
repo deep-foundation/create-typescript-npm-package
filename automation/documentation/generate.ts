@@ -10,18 +10,5 @@ async function main() {
   for (const cliAppFilePath of cliAppFilePaths) {
     fsExtra.chmodSync(cliAppFilePath, '755');
   }
-  await generateDocumentation({
-    generateCliAppsHelpInReadmeOptions: {
-      cliAppFilePaths: cliAppFilePaths,
-      rootHeaderLevel: 2
-    },
-    generateUsageWaysOfNpmCliAppsInMarkdownFormatOptions: {
-      cliUtilityNames: cliAppFilePaths.map(cliAppFilePath => path.basename(cliAppFilePath, '.js')),
-      rootHeaderLevel: 2
-    },
-    generateTableOfContentsForMarkdownOptions: {
-      markdownFilePath: './README.md',
-      rootHeaderLevel: 1
-    } 
-  })
+  await generateDocumentation({})
 };
