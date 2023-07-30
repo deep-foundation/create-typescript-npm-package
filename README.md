@@ -6,6 +6,20 @@ Creates a new npm package with typescript support that will help you to manage y
 
 # Table Of Contents
 <!-- TABLE_OF_CONTENTS_START -->
+- [Table Of Contents](#table-of-contents)
+- [Library](#library)
+- [Cli](#cli)
+  - [Cli Usage](#cli-usage)
+    - [`create-typescript-npm-package`](#`create-typescript-npm-package`)
+  - [Cli Usage Ways](#cli-usage-ways)
+  - [Directly running using npx](#directly-running-using-npx)
+  - [Global Installation](#global-installation)
+    - [Global installation and running using binary name](#global-installation-and-running-using-binary-name)
+    - [Global installation and running using npx](#global-installation-and-running-using-npx)
+  - [Local installation](#local-installation)
+    - [Local installation and running using npx](#local-installation-and-running-using-npx)
+    - [Local installation and running using npm script](#local-installation-and-running-using-npm-script)
+
 <!-- TABLE_OF_CONTENTS_END -->
 
 # Library
@@ -39,33 +53,33 @@ Options:
 <!-- CLI_USAGE_WAYS_START -->
 If you are going to use this package in a project - it is recommended to install it is [Locally](#local-installation)  
 If you are going to use this package for yourself - it is recommended to install it [Globally](#global-installation) or run it directly using [npx](#directly-running-using-npx)
-## Directly running using npx
+### Directly running using npx
 ```shell
 npx --yes @deep-foundation/create-typescript-npm-package
 ```
 
-## Global Installation
-### Global installation and running using binary name
+### Global Installation
+#### Global installation and running using binary name
 ```shell
 npm install --global @deep-foundation/create-typescript-npm-package
-create-typescript-npm-package
+/home/runner/work/create-typescript-npm-package/create-typescript-npm-package/dist/cli/create-typescript-npm-package
 ```
 
-### Global installation and running using npx
+#### Global installation and running using npx
 ```shell
 npm install --global @deep-foundation/create-typescript-npm-package
-npx create-typescript-npm-package
+npx /home/runner/work/create-typescript-npm-package/create-typescript-npm-package/dist/cli/create-typescript-npm-package
 ```
 
-## Local installation
+### Local installation
 
-### Local installation and running using npx
+#### Local installation and running using npx
 ```shell
 npm install @deep-foundation/create-typescript-npm-package
-npx create-typescript-npm-package
+npx /home/runner/work/create-typescript-npm-package/create-typescript-npm-package/dist/cli/create-typescript-npm-package
 ```
 
-### Local installation and running using npm script
+#### Local installation and running using npm script
 ```shell
 npm install @deep-foundation/create-typescript-npm-package
 ```
@@ -73,13 +87,13 @@ Add npm script to package.json. Note that you can name  your script as you want 
 ```json
 {
   "scripts": {
-    "create-typescript-npm-package": "create-typescript-npm-package"
+    "/home/runner/work/create-typescript-npm-package/create-typescript-npm-package/dist/cli/create-typescript-npm-package": "/home/runner/work/create-typescript-npm-package/create-typescript-npm-package/dist/cli/create-typescript-npm-package"
   }
 }
 ```
 and run
 ```shell
-npm run create-typescript-npm-package
+npm run /home/runner/work/create-typescript-npm-package/create-typescript-npm-package/dist/cli/create-typescript-npm-package
 ```
 <!-- CLI_USAGE_WAYS_END -->
 
