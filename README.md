@@ -12,13 +12,13 @@ Creates a new npm package with typescript support that will help you to manage y
   - [Cli Usage](#cli-usage)
     - [`create-typescript-npm-package`](#`create-typescript-npm-package`)
   - [Cli Usage Ways](#cli-usage-ways)
-  - [Directly running using npx](#directly-running-using-npx)
-  - [Global Installation](#global-installation)
-    - [Global installation and running using binary name](#global-installation-and-running-using-binary-name)
-    - [Global installation and running using npx](#global-installation-and-running-using-npx)
-  - [Local installation](#local-installation)
-    - [Local installation and running using npx](#local-installation-and-running-using-npx)
-    - [Local installation and running using npm script](#local-installation-and-running-using-npm-script)
+    - [Directly running using npx](#directly-running-using-npx)
+    - [Global Installation](#global-installation)
+      - [Global installation and running using binary name](#global-installation-and-running-using-binary-name)
+      - [Global installation and running using npx](#global-installation-and-running-using-npx)
+    - [Local installation](#local-installation)
+      - [Local installation and running using npx](#local-installation-and-running-using-npx)
+      - [Local installation and running using npm script](#local-installation-and-running-using-npm-script)
 
 <!-- TABLE_OF_CONTENTS_END -->
 
