@@ -26,6 +26,10 @@ Creates a new npm package with typescript support that will help you to manage y
 See [Documentation] for examples and API
 
 # Cli
+## Quick Start
+```shell
+npx @deep-foundation/create-typescript-npm-package@latest --directory-name "" --package-name ""
+```
 ## Cli Usage
 <!-- CLI_HELP_START -->
 
